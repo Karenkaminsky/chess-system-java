@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\User\eclipse-workspace\aulaVetores\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+4008609152.index
+1488096940.index
