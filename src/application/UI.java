@@ -59,15 +59,30 @@ public class UI {
 	}
 
 	private static void printPiece(ChessPiece piece) {
+
+		// Se a posição do tabuleiro não possui nenhuma peça,
+		// imprime um "-" para representar uma casa vazia.
 		if (piece == null) {
 			System.out.print("-");
+
 		} else {
+
+			// Se existir uma peça, verifica se ela é branca.
 			if (piece.getColor() == Color.WHITE) {
+
+				// Imprime a peça na cor branca do terminal.
+				// Exemplo: P (Peão), R (Rei), T (Torre), etc.
 				System.out.print(ANSI_WHITE + piece + ANSI_RESET);
+
 			} else {
+
+				// Caso não seja branca, significa que é preta.
+				// Imprime a peça na cor amarela (ou outra cor definida).
 				System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
 			}
 		}
+
+		// Imprime um espaço após cada peça para organizar o tabuleiro.
 		System.out.print(" ");
 	}
 }
