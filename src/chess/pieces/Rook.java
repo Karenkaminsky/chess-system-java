@@ -18,7 +18,7 @@ public class Rook extends ChessPiece {
 	}
 
 	@Override
-	public boolean[][] possibleMoves() {
+	public boolean[][] possibleMove() {
 		// Matriz temporária
 		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 
